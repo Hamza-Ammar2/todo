@@ -1,0 +1,32 @@
+@media (width < 375px) {
+    body {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        height: calc(100% - 20px);
+        width: calc(100% - 40px);
+    }
+
+    .todos {
+        max-height: 250px;
+    }
+
+    .todo {
+        font-size: 1rem;
+    }
+
+    .opts {
+        position: absolute;
+        top: 80%;
+        left: 20px;
+        border-radius: 5px;
+        justify-content: center;
+        width: calc(100% - 40px);
+    }
+    .can {
+        position: absolute;
+        width: 300px;
+        left: calc(50% - 150px);
+        top: 90%;
+    }
+}

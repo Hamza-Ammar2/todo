@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+
+  <title>Frontend Mentor | Todo app</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive.css" />
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="dark">
+  <header>
+    <h1>T O D O</h1>
+    <button class="toggle sun"></button>
+  </header>
+
+  <main>
+    <div class="todo dark-todo">
+      <label for="todo" class="check"></label>
+      <input name="todo" id="todo" type="text" placeholder="Create a new todo.." />
+    </div>
+
+    <div class="cont dark-todo">
+      <div class="todos dark-todo">
+        <div class="todo rm-r">
+          <p>You have nothing to do!</p>
+        </div>
+      </div>
+
+      <div class="options">
+        <p id="left">0 items left</p>
+
+        <div class="opts dark-todo">
+          <p id="all" class="in">All</p>
+          <p id="active">Active</p>
+          <p id="completed">Completed</p>
+        </div>
+
+        <p id="clear">Clear Completed</p>
+      </div>
+    </div>
+  </main>
+
+  <p class="can dark">Drag and drop to reorder list</p>
+
+  <script src="data.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

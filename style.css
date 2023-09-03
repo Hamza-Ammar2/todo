@@ -1,0 +1,174 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    padding: 50px 450px 0 450px;
+    width: calc(100% - 900px);
+    height: calc(100% - 50px);
+    margin: 0;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-image: url('images/bg-desktop-dark.jpg'); 
+    font-family: sans-serif;  
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.toggle {
+    background-color: transparent;
+    border: none;
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.todo {
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    gap: 20px;
+}
+
+.check {
+    background-color: transparent;
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 0.65rem;
+    border: 1px solid hsl(234, 11%, 52%);;
+}
+
+input {
+    flex: 1;
+    font-size: inherit;
+    background-color: transparent;
+    color: inherit;
+    border: none;
+}
+
+.rm-r {
+    border-radius: unset;
+    border-bottom: 1px solid hsl(234, 11%, 52%);
+}
+
+input:focus {
+    outline: none;
+}
+
+.todos {
+    height: fit-content;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.cont {
+    margin-top: 20px;
+    border-radius: 5px;
+    height: auto;
+    overflow: hidden;
+}
+
+.options {
+    padding: 5px 10px 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    color: hsl(234, 11%, 52%);
+}
+
+.in {
+    color: hsl(220, 98%, 61%);
+}
+
+.checked {
+    background: linear-gradient( hsl(192, 100%, 67%) , hsl(280, 87%, 65%));
+    overflow: hidden;
+}
+
+.layer {
+    width: 100%;
+    height: 100%;
+    background-image: url('images/icon-check.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.completed {
+    text-decoration: line-through;
+    color: hsl(234, 11%, 52%);
+}
+
+.del {
+    background-color: transparent;
+    width: fit-content;
+    height: fit-content;
+    border: none;
+}
+
+.dragged {
+    opacity: 0.5;
+}
+
+.can {
+    text-align: center;
+}
+
+.sun {
+    background-image: url('images/icon-sun.svg');
+}
+
+.moon {
+    background-image: url('images/icon-moon.svg');
+}
+
+.dark {
+    background-color: hsl(235, 21%, 11%);
+    color: hsl(234, 11%, 52%);
+    border-color: hsl(234, 11%, 52%);
+}
+
+.light {
+    background-color: hsl(236, 33%, 92%);
+    color: hsl(236, 9%, 61%);
+    border-color: hsl(235, 19%, 35%);
+}
+
+.light-todo {
+    background-color: white;
+    border-color: hsl(235, 19%, 35%);
+    color: hsl(235, 19%, 35%);
+}
+
+.dark-todo {
+    background-color: hsl(235, 24%, 19%);
+    border-color: hsl(234, 11%, 52%);
+    color: white;
+}
+
+.opts {
+    display: flex; 
+    align-items: center; 
+    gap: 20px;
+}
+
+.check:hover, .options p:hover {
+    cursor: pointer;
+}
